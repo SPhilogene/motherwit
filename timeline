@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <title>How to Create 3D Glowing Card Carousel using Materialize CSS</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">    
+</head>
+<style>
+    body {
+	margin: 0; 
+	padding: 0;
+	background: #448c7e;  /*  #4c185f */
+}
+.carousel{
+    height: 600px; 
+    perspective: 400px;
+	margin-top: 5%;
+}
+.carousel .carousel-item {
+	width: 400px;
+	height: 500px;
+	/* box-shadow: 0 0 5px #4c185f, 0 0 5px #4c185f, 0 0 5px #4c185f; */
+	animation: animate 10s infinite alternate;
+	border-radius: 15px;
+    background: gray;
+}
+
+@keyframes animate {
+    to {
+      /* box-shadow: 0 0 10px #daa7ed, 0 0 50px #daa7ed, 0 0 50px #daa7ed; 61dafb */
+    }
+  }
+
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.carousel-item.active > img {
+  max-height: 450px;
+  max-width: 100%;
+}
+
+.container {
+  padding: 2px 16px;
+  width: 90%;
+}
+
+h4 {
+  font-size: 2.28rem;
+  line-height: 110%;
+  margin: 0 0 .912rem 0;
+}
+
+.carousel-item.active {
+  background: #ea9d0f;
+  width: 600px;
+  height: 550px;
+  text-align: center;
+  transform: translateX(330px) translateY(50px) translateX(0px) translateX(0px) translateZ(0px) !important;
+}
+
+/* .watermarked {
+  position: relative;
+} */
+
+.watermarked:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* background-image: url("https://www.themotherwitconference.com/uploads/1/4/0/6/14065605/published/mother-wit-logo.png?1490967742"); */
+  background-size: 100px 100px;
+  background-position: 30px 30px;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+
+</style>
+<body>    
+
+    <div class="carousel">
+
+        <div class="watermarked">
+  <img src="https://www.themotherwitconference.com/uploads/1/4/0/6/14065605/published/mother-wit-logo.png?1490967742" alt="MotherWit Logo">
+</div>
+        <div class="carousel-item" class="card">
+  <img src="https://media.licdn.com/dms/image/C4E12AQH2Zm2TQ5jrJw/article-cover_image-shrink_600_2000/0/1621486800952?e=2147483647&v=beta&t=9F8c7NCkZpvEOK0sUqUmlIGD2WvQIaA4ukVz56fOYws" alt="Avatar">
+  <div class="container">
+    <h4><b>1704</b></h4> 
+    <p>First school open to African-Americans in New York City established</p> 
+</div></div>
+
+        <div class="carousel-item" class="card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Flag_of_Haiti.svg/2560px-Flag_of_Haiti.svg.png" alt="Avatar">
+  <div class="container">
+    <h4><b>1804</b></h4> 
+    <p>The French colony Saint-Domingue gains independence as Haiti</p> 
+</div></div>
+
+        <div class="carousel-item" class="card">
+  <img src="https://noahhelps.org/wp-content/uploads/2023/02/crumpler-1024x700.jpg" alt="Avatar">
+  <div class="container">
+    <h4><b>1864</b></h4> 
+    <p>Dr. Rebecca Lee Crumpler becomes the first African-American woman in the US to earn an M.D</p> 
+</div></div>
+
+        <div class="carousel-item" class="card">
+  <img src="https://img.freepik.com/free-photo/symbolic-representation-end-slavery-u-s-with-people-color_23-2151420824.jpg" alt="Avatar">
+  <div class="container">
+    <h4><b>1864</b></h4> 
+    <p>Thirteenth Amendment, abolishing slavary in the US, is passed by Senate</p> 
+</div></div>
+
+        <div class="carousel-item" class="card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Shirley_Chisholm.jpg/440px-Shirley_Chisholm.jpg" alt="Avatar">
+  <div class="container">
+    <h4><b>1924</b></h4> 
+    <p>Shirley Anita Chisholm was born. Chisholm  was an American politician who, in 1968, became the first black woman to be elected to the United States Congress.</p> 
+</div></div>
+
+        <div class="carousel-item" class="card">
+  <img src="https://cdn-test.poetryfoundation.org/cdn-cgi/image/w=2292,q=80/content/images/2f93a5cfe6d0cf4d4e1a4eec2da605c22ca54c0a.jpeg" alt="Avatar">
+  <div class="container">
+    <h4><b>1934</b></h4> 
+    <p>Audre Lorde was born. Lorde was an American writer, professor, philosopher, intersectional feminist, poet and civil rights activist. She was a self-described "Black, lesbian, feminist, socialist, mother, warrior, poet" who dedicated her life and talents to confronting different forms of injustice.</p> 
+</div></div>
+
+        <div class="carousel-item" class="card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/George_Stinney_mugshot.jpg/800px-George_Stinney_mugshot.jpg" alt="Avatar">
+  <div class="container">
+    <h4><b>1944</b></h4> 
+    <p>At age 14, African-American teenage boy George Stinney Jr. becomes the youngest person ever executed by electric chair in the United States after being wrongfully convicted of murder.</p> 
+</div></div>
+
+        <div class="carousel-item" class="card">
+  <img src="https://img.freepik.com/free-photo/symbolic-representation-end-slavery-u-s-with-people-color_23-2151420824.jpg" alt="Avatar">
+  <div class="container">
+    <h4><b>1944</b></h4> 
+    <p>Akasha Gloria Hull (born December 6, 1944) an American poet, educator, writer, and critic whose work in African-American literature and as a Black feminist activist has helped shape Women's Studies.</p> 
+</div></div>
+
+        <div class="carousel-item" class="card">
+  <img src="https://img.freepik.com/free-photo/symbolic-representation-end-slavery-u-s-with-people-color_23-2151420824.jpg" alt="Avatar">
+  <div class="container">
+    <h4><b>1944</b></h4> 
+    <p>Angela Yvonne Davis is a scholar, author, activist, and black feminist philosopher. She is one of the most recognized political activists of the 1960s and 1970s. As an advocate for prisoners' rights, Davis is a founding member of Critical Resistance, a national organization dedicated to abolishing the prison industrial complex. She writes and lectures on social injustice, social movements, and the intersections of race, gender, and class. She has published many books, including Angela Davis: An Autobiography (1974)</p> 
+</div></div>
+
+        <div class="carousel-item" class="card">
+  <img src="https://img.freepik.com/free-photo/symbolic-representation-end-slavery-u-s-with-people-color_23-2151420824.jpg" alt="Avatar">
+  <div class="container">
+    <h4><b>1944</b></h4> 
+    <p>Thirteenth Amendment, abolishing slavary in the US, is passed by Senate</p> 
+</div></div>
+
+        <div class="carousel-item" class="card">
+  <img src="https://img.freepik.com/free-photo/symbolic-representation-end-slavery-u-s-with-people-color_23-2151420824.jpg" alt="Avatar">
+  <div class="container">
+    <h4><b>1864</b></h4> 
+    <p>Thirteenth Amendment, abolishing slavary in the US, is passed by Senate</p> 
+</div></div>
+        
+    </div>   
+    
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+      $(document).ready(function(){
+        $('.carousel').carousel({
+          padding: 200
+      });
+    //   autoplay();
+      function autoplay() {
+        $('.carousel').carousel('next');
+        setTimeout(autoplay, 4500);
+      }
+      });
+</script>
+</body>
+</html>
