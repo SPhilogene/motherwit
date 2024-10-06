@@ -199,7 +199,7 @@ h4 {
         $('.carousel').carousel({
           padding: 200
       });
-	autoplay();
+	//autoplay();
       function autoplay() {
         $('.carousel').carousel('next');
         setTimeout(autoplay, 4500);
