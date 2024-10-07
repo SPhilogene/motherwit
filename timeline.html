@@ -53,16 +53,15 @@ img {
 }
 	
 .carousel-item.active p {
-  background-color: #ea9d0f;
   padding: 5px;
   line-height: 20px;
   font-size: 22px;
-  /* letter-spacing: 0.04em; */
+  background-image: radial-gradient(#ea9d0f, #ea9d0fed, #ea9d0f14);
 } 
 
 .carousel-item.active h4 {
-  background-color: #ea9d0f;
   padding: 5px;
+  background-image: radial-gradient(#ea9d0f, #ea9d0fbd, #ea9d0f40);
 } 
 
 .container {
@@ -203,7 +202,7 @@ h4 {
         $('.carousel').carousel({
           padding: 200
       });
-	//autoplay();
+	autoplay();
       function autoplay() {
         $('.carousel').carousel('next');
         setTimeout(autoplay, 4500);
