@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="style.css">    
 </head>
 <style>
-    body {
+body {
 	margin: 0; 
 	padding: 0;
 	background: #448c7e;  /*  #4c185f */
-	    display:inline;
+	display:inline;
 }
 .carousel{
-    height: 600px; 
-    perspective: 400px;
+  height: 600px; 
+  perspective: 400px;
 	margin-top: 5%;
 }
 .carousel .carousel-item {
@@ -25,7 +25,7 @@
 	/* box-shadow: 0 0 5px #4c185f, 0 0 5px #4c185f, 0 0 5px #4c185f; */
 	animation: animate 10s infinite alternate;
 	border-radius: 15px;
-    background: gray;
+  background: gray;
 }
 
 @keyframes animate {
@@ -34,15 +34,11 @@
     }
   }
 
-  .card {
+.card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 40%;
   border-radius: 5px;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 	
 img {
@@ -53,11 +49,22 @@ img {
   max-height: 350px;
   max-width: 100%;
   object-fit: cover;
-  /* width: 100%;
-  height: 350px; */
   object-position: center 40%;
 }
 	
+.carousel-item.active p {
+  background-color: #ea9d0f;
+  padding: 5px;
+  line-height: 20px;
+  font-size: 22px;
+  /* letter-spacing: 0.04em; */
+} 
+
+.carousel-item.active h4 {
+  background-color: #ea9d0f;
+  padding: 5px;
+} 
+
 .container {
   padding: 2px 16px;
   width: 90%;
@@ -66,7 +73,8 @@ img {
 h4 {
   font-size: 40px;
 	line-height: 50%;
-  margin: 0 0 .912rem 0;
+  /* margin: 0 0 .912rem 0; */
+  margin: 10px;
 }
 
 .carousel-item.active {
@@ -82,10 +90,6 @@ h4 {
 	text-shadow: 2px 2px 0 #ea9d0f, -2px -2px 0 #ea9d0f, 2px -2px 0 #ea9d0f, -2px 2px 0 #ea9d0f, 0px 2px 0 #ea9d0f, 2px 0px 0 #ea9d0f, 0px -2px 0 #ea9d0f, -2px 0px 0 #ea9d0f;
 	line-height: 17px;
 }
-
-/* .watermarked {
-  position: relative;
-} */
 
 .watermarked:after {
   content: "";
