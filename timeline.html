@@ -11,8 +11,6 @@ body {
 	margin: 0; 
 	padding: 0;
 	background: linear-gradient(-45deg, #b874e9, #9472b4, #487fa0, #409a7c);
-	background-image: url("swirl.png");
-
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
@@ -32,13 +30,13 @@ body {
 	display:inline;
 }
 
-
-/* #contained {
-    background-image:url(swirl.png);
-    background-position:center;
-    width:700px;
-    height:400px;
-} */
+.bgimg {
+    z-index: -1;
+    overflow: hidden;
+    left: 70px;
+    position: relative;
+	display: block;
+} 
 	
 .carousel{
   height: 600px; 
@@ -134,6 +132,8 @@ line-height: 17px;
 
 </style>
 <body>    
+<img src="swirl.png" class='bgimg' />
+	
     <div class="carousel">
 
 <div class="watermarked">
