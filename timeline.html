@@ -11,7 +11,25 @@
 body {
 	margin: 0; 
 	padding: 0;
-	background: #448c7e;  /*  #4c185f */
+	body {
+	background: linear-gradient(-45deg, #b874e9, #9472b4, #487fa0, #409a7c);
+	background-size: 400% 400%;
+	animation: gradient 30s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 	display:inline;
 }
 .carousel{
