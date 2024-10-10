@@ -325,11 +325,11 @@ left: -33px;"></p>
         $('.carousel').carousel({
           padding: 200
       });
-	      console.log(document.getElementsByClassName("item active")[0].getAttribute("data-interval"));
+	      console.log(document.getElementsByClassName(".active")[0].getAttribute("data-interval"));
 	autoplay();
       function autoplay() {
         $('.carousel').carousel('next');
-        setTimeout(autoplay, document.getElementsByClassName("item active")[0].getAttribute("data-interval"));
+        setTimeout(autoplay, document.getElementsByClassName(".active")[0].getAttribute("data-interval"));
       }
       });
 
