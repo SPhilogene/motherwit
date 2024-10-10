@@ -325,7 +325,7 @@ left: -33px;"></p>
         $('.carousel').carousel({
           padding: 200
       });
-	      console.log(document.getElementsByClassName(".active")[0].getAttribute("data-interval"));
+	      console.log($('.carousel').find('.active').attr('data-interval'));
 	autoplay();
       function autoplay() {
         $('.carousel').carousel('next');
