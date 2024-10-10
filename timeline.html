@@ -30,16 +30,13 @@ body {
 	display:inline;
 }
 
-
 .bgimg {
-	position: relative;
-	float: right;
-    z-index: -1000;
-	display: block;
-	opacity: 0.05;
-	width: 420px;
-	background-image: url("swirl.png");
-
+  position: relative;
+  float: right;
+  z-index: -1000;
+  display: block;
+  opacity: .05;
+  width: 420px;
 } 
 	
 .carousel{
@@ -53,7 +50,7 @@ body {
 	/* box-shadow: 0 0 5px #4c185f, 0 0 5px #4c185f, 0 0 5px #4c185f; */
 	animation: animate 10s infinite alternate;
 	border-radius: 15px;
-  background: gray;
+  background: inherit;
 }
 
 @keyframes animate {
@@ -138,13 +135,14 @@ line-height: 17px;
 <body>    
 	
     <div class="carousel">
-
+<p style="background-image: url('swirl.png');width: 400px;position: relative;float: right;z-index: -100;height: 300px; background-size: 100% 100%;"><br>
+<br><br><br><br><br><br><br><br><br>
+</p>
+	    
 <div class="watermarked">
   <img src="https://www.themotherwitconference.com/uploads/1/4/0/6/14065605/published/mother-wit-logo.png?1490967742" alt="MotherWit Logo">
 </div>
-	    
-<div class="bgimg"></div>
-	    
+
         <div class="carousel-item" class="card">
   	 <div class="overlay"><img src="png-transparent-red-yellow-and-pink-petaled-flowers-illustration-floral-design-moutan-peony-flower-peony-flower-arranging-orange-artificial-flower.png" style="max-height:300px"></div>	
           <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Flag_of_Haiti.svg/2560px-Flag_of_Haiti.svg.png" alt="Avatar"> -->
