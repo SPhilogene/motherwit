@@ -329,7 +329,7 @@ left: -33px;"></p>
 	autoplay();
       function autoplay() {
         $('.carousel').carousel('next');
-        setTimeout(autoplay, document.getElementsByClassName(".active")[0].getAttribute("data-interval"));
+        setTimeout(autoplay, $('.carousel').find('.active').attr('data-interval'));
       }
       });
 
