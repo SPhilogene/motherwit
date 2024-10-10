@@ -137,17 +137,16 @@ line-height: 17px;
   right: -50px;
   background-repeat: no-repeat;"></p>
 	
-    <div id="myCarousel" class="carousel">
+    <div class="carousel">
 	    
 <div class="watermarked">
   <img src="https://www.themotherwitconference.com/uploads/1/4/0/6/14065605/published/mother-wit-logo.png?1490967742" alt="MotherWit Logo">
 </div>
-  <div class="carousel-inner">
         <div class="carousel-item" class="card" data-interval="500">
   	 <div class="overlay"><img src="png-transparent-red-yellow-and-pink-petaled-flowers-illustration-floral-design-moutan-peony-flower-peony-flower-arranging-orange-artificial-flower.png" style="max-height:300px"></div>	
           <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Flag_of_Haiti.svg/2560px-Flag_of_Haiti.svg.png" alt="Avatar"> -->
   <div class="container">
-    <h4><b>The Mother Wit Conference <3 </b></h4> 
+    <h4><b>The Mother Wit Conference</b></h4> 
     <p>The Mother Wit Conference started with a conversation between a mother & a daughter, and evolved into a dialogue between women of all ages and walks of life.
 
 Now it is a forum for men, women, families and communities to share, receive, transform and HEAL &#9829;</p> 
@@ -301,7 +300,7 @@ theater, politics and scholarship centered in Harlem, spanning the 1920s and 193
     <h4><b>60 Years Ago</b></h4> 
     <p>The British protectorate of Northern Rhodesia gains independence, as the Republic of Zambia on October 24 1964</p> 
 </div></div>
-</div></div>
+</div>
 
 </div>   
 
@@ -322,29 +321,29 @@ left: -33px;"></p>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
- //      $(document).ready(function(){
- //        $('.carousel').carousel({
- //          padding: 200
- //      });
-	// autoplay();
- //      function autoplay() {
- //        $('.carousel').carousel('next');
- //        setTimeout(autoplay, 4500);
- //      }
- //      });
+      $(document).ready(function(){
+        $('.carousel').carousel({
+          padding: 200
+      });
+	autoplay();
+      function autoplay() {
+        $('.carousel').carousel('next');
+        setTimeout(autoplay, parseInt($next.data('interval')));
+      }
+      });
 
-var t;
+// var t;
 
-var start = $('#myCarousel').find('.active').attr('data-interval');
-t = setTimeout("$('#myCarousel').carousel({interval: 500});", start-1000);
+// var start = $('#myCarousel').find('.active').attr('data-interval');
+// t = setTimeout("$('#myCarousel').carousel({interval: 500});", start-1000);
 
-$('#myCarousel').on('slid.bs.carousel', function () {  
-     clearTimeout(t);  
-     var duration = $(this).find('.active').attr('data-interval');
+// $('#myCarousel').on('slid.bs.carousel', function () {  
+//      clearTimeout(t);  
+//      var duration = $(this).find('.active').attr('data-interval');
     
-     $('#myCarousel').carousel('pause');
-     t = setTimeout("$('#myCarousel').carousel();", duration-1000);
-})
+//      $('#myCarousel').carousel('pause');
+//      t = setTimeout("$('#myCarousel').carousel();", duration-1000);
+// })
 
 
 </script>
