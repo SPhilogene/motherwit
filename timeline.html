@@ -338,11 +338,11 @@ var t;
 var start = $('.carousel').find('.active').attr('data-interval');
 t = setTimeout("$('.carousel').carousel({interval: 4500});", start-1000);
 
-$('#.carousel').on('slid.bs.carousel', function () {  
+$('.carousel').on('slid.bs.carousel', function () {  
      clearTimeout(t);  
      var duration = $(this).find('.active').attr('data-interval');
     
-     $('#myCarousel').carousel('pause');
+     $('.carousel').carousel('pause');
      t = setTimeout("$('.carousel').carousel();", duration-1000);
 })
 
