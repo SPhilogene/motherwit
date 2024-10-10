@@ -137,7 +137,7 @@ line-height: 17px;
   right: -50px;
   background-repeat: no-repeat;"></p>
 	
-    <div class="carousel">
+    <div id="myCarousel" class="carousel">
 	    
 <div class="watermarked">
   <img src="https://www.themotherwitconference.com/uploads/1/4/0/6/14065605/published/mother-wit-logo.png?1490967742" alt="MotherWit Logo">
@@ -322,29 +322,30 @@ left: -33px;"></p>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
-      $(document).ready(function(){
-        $('.carousel').carousel({
-          padding: 200
-      });
-	autoplay();
-      function autoplay() {
-        $('.carousel').carousel('next');
-        setTimeout(autoplay, 4500);
-      }
-      });
+ //      $(document).ready(function(){
+ //        $('.carousel').carousel({
+ //          padding: 200
+ //      });
+	// autoplay();
+ //      function autoplay() {
+ //        $('.carousel').carousel('next');
+ //        setTimeout(autoplay, 4500);
+ //      }
+ //      });
 
-// var t;
+var t;
 
-// var start = $('.carousel').find('.active').attr('data-interval');
-// t = setTimeout("$('.carousel').carousel({interval: 4500});", start-1000);
+var start = $('#myCarousel').find('.active').attr('data-interval');
+t = setTimeout("$('#myCarousel').carousel({interval: 500});", start-1000);
 
-// $('.carousel').on('slid.bs.carousel', function () {  
-//      clearTimeout(t);  
-//      var duration = $(this).find('.active').attr('data-interval');
+$('#myCarousel').on('slid.bs.carousel', function () {  
+     clearTimeout(t);  
+     var duration = $(this).find('.active').attr('data-interval');
     
-//      $('.carousel').carousel('pause');
-//      t = setTimeout("$('.carousel').carousel();", duration-1000);
-// })
+     $('#myCarousel').carousel('pause');
+     t = setTimeout("$('#myCarousel').carousel();", duration-1000);
+})
+
 
 </script>
 </body>
