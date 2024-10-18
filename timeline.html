@@ -10,7 +10,7 @@
 body {
 	margin: 0; 
 	padding: 0;
-	 background-image: url("Screenshot 2024-10-17 195130.png")
+	 background-image: url("bg.png");
 /* 	background: linear-gradient(-45deg, #b874e9, #9472b4, #487fa0, #409a7c); */
 	background-size: 400% 400%;
 /* 	animation: gradient 15s ease infinite; */
@@ -141,7 +141,7 @@ line-height: 17px;
     <div class="carousel">
 	    
 <div class="watermarked">
-  <img src="https://www.themotherwitconference.com/uploads/1/4/0/6/14065605/published/mother-wit-logo.png?1490967742" alt="MotherWit Logo">
+  <img src="logo update.png" alt="MotherWit Logo">
 </div>
 
 	    <div class="carousel-item" class="card" data-interval="10000">
@@ -394,7 +394,7 @@ opacity: 0.5;
       });
 	      console.log($('.carousel').find('.active').attr('data-interval'));
 	autoplay();
-      function autoplay() {
+      //function autoplay() {
         $('.carousel').carousel('next');
         setTimeout(autoplay, $('.carousel').find('.active').attr('data-interval'));
       }
