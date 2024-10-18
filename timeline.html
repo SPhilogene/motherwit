@@ -120,7 +120,7 @@ line-height: 17px;
   left: 0px;
   /* background-image: url("https://www.themotherwitconference.com/uploads/1/4/0/6/14065605/published/mother-wit-logo.png?1490967742"); */
   background-size: 100px 100px;
-  background-position: 30px 30px;
+/*   background-position: 30px 30px; */
   background-repeat: no-repeat;
   opacity: 0.7;
 }
@@ -141,7 +141,7 @@ line-height: 17px;
     <div class="carousel">
 	    
 <div class="watermarked">
-  <img src="logo update.png" alt="MotherWit Logo">
+  <img src="logo update.png" alt="MotherWit Logo" style="width:200px">
 </div>
 
 	    <div class="carousel-item" class="card" data-interval="10000">
@@ -393,8 +393,8 @@ opacity: 0.5;
           padding: 200
       });
 	      console.log($('.carousel').find('.active').attr('data-interval'));
-	autoplay();
-      //function autoplay() {
+	//autoplay();
+      function autoplay() {
         $('.carousel').carousel('next');
         setTimeout(autoplay, $('.carousel').find('.active').attr('data-interval'));
       }
