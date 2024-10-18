@@ -387,7 +387,7 @@ opacity: 0.5;
           padding: 200
       });
 	      console.log($('.carousel').find('.active').attr('data-interval'));
-	//autoplay();
+	autoplay();
       function autoplay() {
         $('.carousel').carousel('next');
         setTimeout(autoplay, $('.carousel').find('.active').attr('data-interval'));
